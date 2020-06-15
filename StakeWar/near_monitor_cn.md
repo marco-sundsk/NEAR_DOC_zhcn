@@ -20,7 +20,10 @@ NEAR使用nearup工具启动和持续管理节点进程。nearup是个python3写
 `command += [os.path.expanduser(f'~/.nearup/logs/{net}.log')]`
 
 #### 日志的格式
-NEAR节点日志按格式主要可分为三种，
+NEAR节点日志按格式主要可分为三种，  
+![pic](https://github.com/marco-sundsk/NEAR_DOC_zhcn/blob/master/static/images/StakeWar/blog1.png?raw=false)
+
+如果图片看不到的，请看下面的文字示例：
 ```
 Jun 10 09:33:38.629  INFO near: Version: 1.0.0, Build: b30864b8, Latest Protocol: 22
 Jun 10 09:33:39.023  INFO near: Opening store database at "/root/.near/betanet/data"
