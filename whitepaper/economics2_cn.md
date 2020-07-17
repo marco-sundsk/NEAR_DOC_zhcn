@@ -191,7 +191,7 @@ gas_{tx} = numberOfCPUInstructions(tx) + \alpha \times SizeOf(tx)
 如果账户余额低于$minBalance = pokeThreshold×storagePrice×SizeOf(account)$，任何人都可以发送一个特殊交易，清除该账户的状态。作为奖励，该人获得一些来自遗留余额的$pokeReward$作为奖励。并采用下述一些规则：
 
 - 若某笔交易将导致账户余额低于$minBalance$，不管是因为转出资产还是增加账户规模，该交易都被视为失败。
-- 如果账户有权益抵押，也即，$staked > 0$，就不能仅仅移除账户。取而代之，我们要求一个权益抵押账户的$minBalance$为$minBalance$ to be $4 × epochLength × storagePrice × SizeOf(account)$。如果再周期的边界，验证人的余额$balance < minBalance$，就取消它的验证人参选或轮换。
+- 如果账户有权益抵押，也即，$staked > 0$，就不能仅仅移除账户。取而代之，我们要求一个权益抵押账户的$minBalance$为$minBalance$ 为 $4 × epochLength × storagePrice × SizeOf(account)$。如果再周期的边界，验证人的余额$balance < minBalance$，就取消它的验证人参选或轮换。
 
 每次（按块收取状态租赁费）都更新余额是不现实的，我们只在余额因某个交易产生变动时，才更新账户：
 
